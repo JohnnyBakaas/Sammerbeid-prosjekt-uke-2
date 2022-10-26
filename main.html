@@ -9,12 +9,47 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div>
+    <div class="contents">
       <h1>Vår Nettbutikk</h1>
-    </div>
-    <div>
+
       <h2>Frukt og grønt:</h2>
-    
-      <script src="main.js" async defer></script>
+
+      <div class="products">
+        <div onclick="go(this)">Epler</div>
+        <br />
+        <div onclick="go(this)">Pærer</div>
+        <br />
+        <div onclick="go(this)">Druer</div>
+        <br />
+        <div onclick="go(this)">Bananer</div>
+        <br />
+        <div onclick="go(this)">Plommer</div>
+        <br />
+        <div onclick="go(this)">Grapefrukt</div>
+      </div>
+      <div class="prices">
+        <div>5 kr</div>
+        <br />
+        <div>10 kr</div>
+        <br />
+        <div>7 kr</div>
+        <br />
+        <div>8 kr</div>
+        <br />
+        <div>15 kr</div>
+        <br />
+        <div>20 kr</div>
+      </div>
+      <div class="cartWindow">
+        Handlekurv
+        <div id="cart" class="cart"></div>
+      </div>
+      <div class="cartPrice" id="cartPriceID"></div>
+      <div class="wallet"><input id="wallet" type="number" />kr betalt</div>
+      <br />
+      <button id="enterbutton" class="buy" onclick="buy()">Kjøp</button>
+      <div class="returnMoney" id="returnMoney"></div>
+    </div>
+    <script src="main.js" async defer></script>
   </body>
 </html>

@@ -1,19 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: rgb(36, 36, 36);
-  display: grid;
+  height: fit-content;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: rgb(165, 160, 160);
+}
 
-  grid-template-areas: ;
+div {
+}
+
+.contents {
+  width: fit-content;
+  height: fit-content;
+  border: solid 2px black;
+  background-color: green;
+  display: grid;
+  grid-template-columns: 250px 50px 200px;
+  grid-template-rows: 100px 30px 300px 30px;
 }
 
 h1 {
+  text-align: center;
+  justify-self: stretch;
+  font-size: xx-large;
+  height: auto;
   background-color: green;
+  grid-area: 1 / 1 / 1 / 4;
+}
+
+h2 {
+  height: auto;
+  background-color: green;
+  grid-area: 2 / 1 / 2 / 4;
 }
 
 .products {
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  grid-area: 3 / 1 / 5 / 2;
+  user-select: none;
 }
 
-.cart {
+.prices {
+  border: 2px solid black;
+  background-color: antiquewhite;
+  grid-area: 3 / 2 / 5 /3;
 }
 
-.total {
+.cartWindow {
+  border: 2px solid black;
+  background-color: antiquewhite;
+  grid-area: 3 / 3 / 5 / 4;
+}
+
+.cartPrice {
+  border: 2px solid black;
+  background-color: yellow;
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.wallet {
+  padding: 2%;
+  justify-content: stretch;
+  background-color: brown;
+  border: 2px solid black;
+  grid-area: 5 / 1 / 5 / 1;
+}
+
+.buy {
+  grid-area: 5 / 2 / 5 / 2;
+}
+
+.returnMoney {
+  background-color: chartreuse;
+  grid-area: 5 / 3 / 5 /4;
 }
